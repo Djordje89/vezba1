@@ -1,16 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { MatCardModule } from '@angular/material/card';
+
 import { AppComponent } from './app.component';
+import { PrvaComponent } from './prva.component';
+import { DrugaComponent } from './druga/druga.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PrvaComponent,
+    DrugaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
